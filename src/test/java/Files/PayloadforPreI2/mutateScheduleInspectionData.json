@@ -1,0 +1,18 @@
+{
+  "operationName": "mutateScheduleInspectionData",
+  "variables": {
+    "clusterType": "door_step",
+    "autoAssign": false,
+    "leadPk": "149735",
+    "leadId": "149735",
+    "address": "Test Address",
+    "lat": "12.9698196",
+    "lng": "77.7499721",
+    "scheduledStartTime": "2022-06-24T08:00:00+05:30",
+    "cityId": "5",
+    "addressBroad": "352 5th, near Bata, Sathya Sai Layout, Whitefield, Bengaluru, Karnataka 560066, India",
+    "loanClosure": true,
+    "inspectionType": "procurement"
+  },
+  "query": "mutation mutateScheduleInspectionData($cityId: Int, $leadPk: Int!, $address: String, $inspectionType: String!, $lat: Float, $lng: Float, $scheduledStartTime: DateTime!, $addressBroad: String, $instaPickup: Boolean, $loanClosure: Boolean, $oem: Boolean, $autoAssign: Boolean, $clusterType: String) {\n  scheduleInspection(\n    leadId: $leadPk\n    address: $address\n    inspectionType: $inspectionType\n    scheduledStartTime: $scheduledStartTime\n    lat: $lat\n    lng: $lng\n    cityId: $cityId\n    addressBroad: $addressBroad\n    instaPickup: $instaPickup\n    oem: $oem\n    loanClosure: $loanClosure\n    autoAssign: $autoAssign\n    clusterType: $clusterType\n  ) {\n    message\n    ok\n    inspection {\n      id\n      __typename\n    }\n    __typename\n  }\n}\n"
+}

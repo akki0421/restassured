@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="7.002">
+    <testcase classname="Setting client" name="Setting client dev" time="0.012">
+        <system-out><![CDATA[Given client is ""..........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validating add Lead Functionality" name="Validating add Lead Functionality" time="3.972">
+        <system-out><![CDATA[Given Login to the application..............................................passed
+And Mobile Number Generated.................................................passed
+When Lead Creation for "assured" is Initiated...............................passed
+When Lead Created Successfully..............................................passed
+Then Contact number unmasked................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validating add Cars Functionality" name="Validating add Cars Functionality" time="2.812">
+        <system-out><![CDATA[Given Fetch recommended cars from preferences...............................passed
+And get a car from recommended cars.........................................passed
+And Search cars from inventory and save.....................................passed
+Then Car added to interest..................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

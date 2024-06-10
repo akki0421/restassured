@@ -1,0 +1,10 @@
+{
+  "operationName": "applicableForProcurmentCallAction",
+  "variables": {
+    "statusName": "lead-workflow-lead-workflow-applicable-for-procurement",
+    "taskId": "2912723",
+    "leadPk": "149187",
+    "commentText": "Lead Action Applicable for procurement : Test"
+  },
+  "query": "mutation applicableForProcurmentCallAction($taskId: Int!, $statusName: String!) {\n  updateTaskAndScheduleNextTasks(taskId: $taskId, statusName: $statusName) {\n    ok\n    message\n    tasks {\n      pk\n      lead {\n        pk\n        __typename\n      }\n      taskType {\n        id\n        name\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+}

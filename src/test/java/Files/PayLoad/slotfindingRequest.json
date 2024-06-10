@@ -1,0 +1,12 @@
+  {
+    "operationName": "getSlotsForClusterV2",
+    "variables": {
+      "inspectionType": "inspection",
+      "startTime": "2022-02-17T08:00:00+05:30",
+      "endTime": "2022-02-17T21:00:00+05:30",
+      "lat": "12.9698196",
+      "lng": "77.7499721",
+      "procurementCategory": "assured"
+    },
+    "query": "query getSlotsForClusterV2($startTime: DateTime, $endTime: DateTime, $inspectionType: String, $procurementCategory: String, $lat: Float, $lng: Float, $leadId: Int, $numberOfCars: Int) {\n  getSlotsForClusterV2(\n    endTime: $endTime\n    startTime: $startTime\n    lat: $lat\n    lng: $lng\n    inspectionType: $inspectionType\n    procurementCategory: $procurementCategory\n    leadId: $leadId\n    numberOfCars: $numberOfCars\n  ) {\n    slots {\n      startTime\n      endTime\n      availableSlots\n      bookable\n      __typename\n    }\n    __typename\n  }\n}\n"
+  }

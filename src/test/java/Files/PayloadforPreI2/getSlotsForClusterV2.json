@@ -1,0 +1,16 @@
+{
+  "operationName": "getSlotsForClusterV2",
+  "variables": {
+    "getNewSlots": true,
+    "includeSlotsFromNearbyClusters": false,
+    "startTime": "2022-06-24T08:00:00+05:30",
+    "endTime": "2022-06-24T21:00:00+05:30",
+    "lat": "12.9698196",
+    "lng": "77.7499721",
+    "procurementCategory": "assured",
+    "leadId": "149728",
+    "loanClosure": "null",
+    "inspectionType": "procurement"
+  },
+  "query": "query getSlotsForClusterV2($startTime: DateTime, $endTime: DateTime, $inspectionType: String, $procurementCategory: String, $lat: Float, $lng: Float, $leadId: Int, $numberOfCars: Int, $instaPickup: Boolean, $loanClosure: Boolean, $oemVisit: Boolean, $getNewSlots: Boolean, $clusterType: String) {\n  getSlotsForClusterV2(\n    endTime: $endTime\n    startTime: $startTime\n    lat: $lat\n    lng: $lng\n    inspectionType: $inspectionType\n    procurementCategory: $procurementCategory\n    leadId: $leadId\n    numberOfCars: $numberOfCars\n    instaPickup: $instaPickup\n    loanClosure: $loanClosure\n    oemVisit: $oemVisit\n    getNewSlots: $getNewSlots\n    clusterType: $clusterType\n  ) {\n    slots {\n      startTime\n      endTime\n      availableSlots\n      bookable\n      isPreferred\n      __typename\n    }\n    __typename\n  }\n}\n"
+}

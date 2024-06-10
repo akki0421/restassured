@@ -1,0 +1,12 @@
+{
+  "operationName": "updatePaymentRequestForLead",
+  "variables": {
+    "paymentRequestId": "2788",
+    "status": "pending",
+    "sellLeadId": "558316",
+    "amount": "100000.00",
+    "paymentStatus": "supply_approved",
+    "paymentTypeName": "Balance Payment"
+  },
+  "query": "mutation updatePaymentRequestForLead($paymentRequestId: Int, $status: String, $sellLeadId: Int, $remarks: String) {\n  updatePaymentRequestForLead(\n    paymentRequestId: $paymentRequestId\n    status: $status\n    sellLeadId: $sellLeadId\n    remarks: $remarks\n  ) {\n    error\n    data\n    __typename\n  }\n}\n"
+}

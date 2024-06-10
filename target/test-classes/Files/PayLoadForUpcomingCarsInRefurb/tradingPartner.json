@@ -1,0 +1,10 @@
+{
+  "operationName": "tradingPartners",
+  "variables": {
+    "isValid": true,
+    "orderBy": [
+      "name"
+    ]
+  },
+  "query": "query tradingPartners($isValid: Boolean, $orderBy: [String]) {\n  tradingPartners(isValid: $isValid, orderBy: $orderBy) {\n    edges {\n      node {\n        pk\n        name\n        state\n        displayName\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+}

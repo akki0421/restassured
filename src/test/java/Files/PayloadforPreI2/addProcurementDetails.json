@@ -1,0 +1,15 @@
+{
+  "operationName": "addProcurementDetails",
+  "variables": {
+    "customerAgree": "CUSTOMER_AGREED",
+    "statusName": "lead-workflow-lead-workflow-pricing-agreed",
+    "leadPk": "149715",
+    "leadId": "149715",
+    "taskId": "2922124",
+    "taskName": "pricing",
+    "commentText": "Lead Action Offer Accepted : Test",
+    "price_pitched": "819000",
+    "finalAmount": "819000"
+  },
+  "query": "mutation addProcurementDetails($leadPk: Int, $price_pitched: Int) {\n  addProcurementDetails(leadId: $leadPk, price: $price_pitched) {\n    procurementDetails {\n      price\n      __typename\n    }\n    error\n    ok\n    __typename\n  }\n}\n"
+}

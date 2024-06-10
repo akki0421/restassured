@@ -1,0 +1,8 @@
+{
+  "operationName": "mutateUpdateTask",
+  "variables": {
+    "statusName": "lead-workflow-lead-workflow-procurement-scheduled",
+    "taskId": "2922521"
+  },
+  "query": "mutation mutateUpdateTask($taskId: Int!, $statusName: String!, $scheduledTime: DateTime) {\n  updateTaskAndScheduleNextTasks(\n    taskId: $taskId\n    statusName: $statusName\n    scheduledTime: $scheduledTime\n  ) {\n    ok\n    message\n    __typename\n  }\n}\n"
+}

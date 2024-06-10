@@ -1,0 +1,31 @@
+{
+  "operationName": "mutateScheduleInspectionData",
+  "variables": {
+    "inspectionType": "inspection",
+    "statusName": "lead-workflow-lead-workflow-inspection-to-be-scheduled",
+    "customerExpectedPricelabel": "customer_expected_price",
+    "preInspectionCallingPricelabel": "target_procurement_price",
+    "negotiationType": "pre-inspection",
+    "autoAssign": true,
+    "leadPk": "138666",
+    "leadId": "138666",
+    "address": "Test Address",
+    "pricePitchedNew": true,
+    "lat": "12.9698196",
+    "lng": "77.7499721",
+    "scheduledStartTime": "2022-02-17T12:30:00+05:30",
+    "taskId": "2793157",
+    "customerExpectedPrice": "300000",
+    "targetProcurementPriceMax": "250000",
+    "cityId": "5",
+    "targetProcurementPriceMin": "200000",
+    "addressBroad": "Whitefield, Bengaluru, Karnataka, India",
+    "data": "{\"sellingReason\":\"23\",\"instaPickup\":\"false\"}",
+    "slotsResponse": "[{\"startTime\":\"2022-02-17T08:00:00+05:30\",\"endTime\":\"2022-02-17T08:30:00+05:30\",\"availableSlots\":8,\"bookable\":true,\"__typename\":\"NewSlotNode\"},{\"startTime\":\"2022-02-17T08:30:00+05:30\",\"endTime\":\"2022-02-17T09:00:00+05:30\",\"availableSlots\":8,\"bookable\":true,\"__typename\":\"NewSlotNode\"},{\"startTime\":\"2022-02-17T09:00:00+05:30\",\"endTime\":\"2022-02-17T09:30:00+05:30\",\"availableSlots\":8,\"bookable\":true,\"__typename\":\"NewSlotNode\"},{\"startTime\":\"2022-02-17T09:30:00+05:30\",\"endTime\":\"2022-02-17T10:00:00+05:30\",\"availableSlots\":10,\"bookable\":true,\"__typename\":\"NewSlotNode\"},{\"startTime\":\"2022-02-17T10:00:00+05:30\",\"endTime\":\"2022-02-17T10:30:00+05:30\",\"availableSlots\":10,\"bookable\":true,\"__typename\":\"NewSlotNode\"},{\"startTime\":\"2022-02-17T10:30:00+05:30\",\"endTime\":\"2022-02-17T11:00:00+05:30\",\"availableSlots\":9,\"bookable\":true,\"__typename\":\"NewSlotNode\"},{\"startTime\":\"2022-02-17T11:00:00+05:30\",\"endTime\":\"2022-02-17T11:30:00+05:30\",\"availableSlots\":9,\"bookable\":true,\"__typename\":\"NewSlotNode\"},{\"startTime\":\"2022-02-17T11:30:00+05:30\",\"endTime\":\"2022-02-17T12:00:00+05:30\",\"availableSlots\":9,\"bookable\":true,\"__typename\":\"NewSlotNode\"},{\"startTime\":\"2022-02-17T12:00:00+05:30\",\"endTime\":\"2022-02-17T12:30:00+05:30\",\"availableSlots\":8,\"bookable\":true,\"__typename\":\"NewSlotNode\"},{\"startTime\":\"2022-02-17T12:30:00+05:30\",\"endTime\":\"2022-02-17T13:00:00+05:30\",\"availableSlots\":8,\"bookable\":true,\"__typename\":\"NewSlotNode\"},{\"startTime\":\"2022-02-17T13:00:00+05:30\",\"endTime\":\"2022-02-17T13:30:00+05:30\",\"availableSlots\":7,\"bookable\":true,\"__typename\":\"NewSlotNode\"},{\"startTime\":\"2022-02-17T13:30:00+05:30\",\"endTime\":\"2022-02-17T14:00:00+05:30\",\"availableSlots\":6,\"bookable\":true,\"__typename\":\"NewSlotNode\"},{\"startTime\":\"2022-02-17T14:00:00+05:30\",\"endTime\":\"2022-02-17T14:30:00+05:30\",\"availableSlots\":7,\"bookable\":true,\"__typename\":\"NewSlotNode\"},{\"startTime\":\"2022-02-17T14:30:00+05:30\",\"endTime\":\"2022-02-17T15:00:00+05:30\",\"availableSlots\":8,\"bookable\":true,\"__typename\":\"NewSlotNode\"},{\"startTime\":\"2022-02-17T15:00:00+05:30\",\"endTime\":\"2022-02-17T15:30:00+05:30\",\"availableSlots\":9,\"bookable\":true,\"__typename\":\"NewSlotNode\"},{\"startTime\":\"2022-02-17T15:30:00+05:30\",\"endTime\":\"2022-02-17T16:00:00+05:30\",\"availableSlots\":10,\"bookable\":true,\"__typename\":\"NewSlotNode\"},{\"startTime\":\"2022-02-17T16:00:00+05:30\",\"endTime\":\"2022-02-17T16:30:00+05:30\",\"availableSlots\":10,\"bookable\":true,\"__typename\":\"NewSlotNode\"},{\"startTime\":\"2022-02-17T16:30:00+05:30\",\"endTime\":\"2022-02-17T17:00:00+05:30\",\"availableSlots\":10,\"bookable\":true,\"__typename\":\"NewSlotNode\"},{\"startTime\":\"2022-02-17T17:00:00+05:30\",\"endTime\":\"2022-02-17T17:30:00+05:30\",\"availableSlots\":10,\"bookable\":true,\"__typename\":\"NewSlotNode\"},{\"startTime\":\"2022-02-17T17:30:00+05:30\",\"endTime\":\"2022-02-17T18:00:00+05:30\",\"availableSlots\":10,\"bookable\":true,\"__typename\":\"NewSlotNode\"},{\"startTime\":\"2022-02-17T18:00:00+05:30\",\"endTime\":\"2022-02-17T18:30:00+05:30\",\"availableSlots\":10,\"bookable\":true,\"__typename\":\"NewSlotNode\"},{\"startTime\":\"2022-02-17T18:30:00+05:30\",\"endTime\":\"2022-02-17T19:00:00+05:30\",\"availableSlots\":9,\"bookable\":true,\"__typename\":\"NewSlotNode\"},{\"startTime\":\"2022-02-17T19:00:00+05:30\",\"endTime\":\"2022-02-17T19:30:00+05:30\",\"availableSlots\":9,\"bookable\":true,\"__typename\":\"NewSlotNode\"},{\"startTime\":\"2022-02-17T19:30:00+05:30\",\"endTime\":\"2022-02-17T20:00:00+05:30\",\"availableSlots\":6,\"bookable\":true,\"__typename\":\"NewSlotNode\"},{\"startTime\":\"2022-02-17T20:00:00+05:30\",\"endTime\":\"2022-02-17T20:30:00+05:30\",\"availableSlots\":6,\"bookable\":true,\"__typename\":\"NewSlotNode\"}]",
+    "instaPickup": false,
+    "sellingReasonId": "23",
+    "commentText": "Lead Action Schedule Inspection => Test",
+    "SellingReasonText": "Lead Action Schedule Inspection => Other comments: Test"
+  },
+  "query": "mutation mutateScheduleInspectionData($cityId: Int, $leadPk: Int!, $address: String, $inspectionType: String!, $lat: Float, $lng: Float, $scheduledStartTime: DateTime!, $addressBroad: String, $instaPickup: Boolean, $loanClosure: Boolean, $oem: Boolean, $autoAssign: Boolean) {\n  scheduleInspection(\n    leadId: $leadPk\n    address: $address\n    inspectionType: $inspectionType\n    scheduledStartTime: $scheduledStartTime\n    lat: $lat\n    lng: $lng\n    cityId: $cityId\n    addressBroad: $addressBroad\n    instaPickup: $instaPickup\n    oem: $oem\n    loanClosure: $loanClosure\n    autoAssign: $autoAssign\n  ) {\n    message\n    ok\n    inspection {\n      id\n      __typename\n    }\n    __typename\n  }\n}\n"
+}

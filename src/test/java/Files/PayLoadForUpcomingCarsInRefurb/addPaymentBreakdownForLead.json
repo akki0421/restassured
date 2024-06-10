@@ -1,0 +1,11 @@
+{
+  "operationName": "addPaymentBreakdownForLead",
+  "variables": {
+    "amount": "100000",
+    "leadId": "558294",
+    "paymentType": "Balance Payment",
+    "remarks": "Testing",
+    "payeeType": "individual"
+  },
+  "query": "mutation addPaymentBreakdownForLead($amount: Float, $cancellationAmount: Float, $leadId: Int, $paymentType: String, $remarks: String, $payeeType: String) {\n  addPaymentBreakdownForLead(\n    amount: $amount\n    cancellationAmount: $cancellationAmount\n    leadId: $leadId\n    paymentType: $paymentType\n    remarks: $remarks\n    payeeType: $payeeType\n  ) {\n    data\n    error\n    __typename\n  }\n}\n"
+}

@@ -1,0 +1,73 @@
+@Library('jenkins-shared-library') _
+def COLOR_MAP = [
+    'SUCCESS': 'good',
+    'FAILURE': 'danger',
+]
+pipeline {
+    agent {label 'codebuild'}
+     options {
+        timeout(time: 20, unit: "MINUTES")
+        disableConcurrentBuilds()
+        buildDiscarder(logRotator(numToKeepStr: "20"))
+    }
+     environment {
+       BUCKET_NAME = 'sp-qa-artifacts-bucket'
+       FILE_NAME = 'sp-api-automation-demand-report'
+     
+    }
+    stages {
+        stage('Pull Code') {
+            steps {
+                slackSend channel: '#builds',
+                          color: 'good',
+                          message: "*STARTED:* Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}"
+                checkout scm
+            }
+        }
+        
+        stage('Test') {
+            steps {
+                sh """ 
+                    chmod -R 744 src
+                    echo "CATEGORY Value is :${params.CATEGORY}"
+                    echo "CLIENT Value is :${params.CLIENT}"
+                    sed -i s/CATEGORY/"${params.CATEGORY}"/g src/test/java/TestRunner/TestRunner.java
+                    sed -i s/CLIENT/"${params.CLIENT}"/g src/test/java/TestRunner/TestRunner.java
+                    docker build -t ${env.FILE_NAME}:${env.BUILD_NUMBER}-${params.ENV} --build-arg BUCKET_NAME=${env.BUCKET_NAME} --build-arg FILE_NAME=${env.FILE_NAME} --build-arg BUILD_NUMBER=${env.BUILD_NUMBER} --build-arg ENV=${params.ENV} -f deployment//Dockerfile .
+                """
+            }
+        }
+        stage('Download Report') {
+            steps {
+                sh """                    
+                    aws s3 cp s3://${env.BUCKET_NAME}/${env.FILE_NAME}-${params.ENV}-${env.BUILD_NUMBER}.zip  .
+                    
+                """
+            }
+        }
+        stage('Cleanup') {
+            steps {
+                sh """                    
+                    docker rmi ${env.FILE_NAME}:${env.BUILD_NUMBER}-${params.ENV}
+                """
+            }
+        }
+        stage('notify') {
+            steps {
+                script {
+                env.S3_URL = sh(
+                    script:
+                    """
+                       aws s3 presign s3://${env.BUCKET_NAME}/${env.FILE_NAME}-${params.ENV}-${env.BUILD_NUMBER}.zip --expires-in 604800
+                    """,
+                    returnStdout: true
+                )
+            }
+            slackSend channel: "#sales_crm",
+            color: 'good',
+            message: "*SUCCESS:* Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}, Report Download at ${env.S3_URL}"
+            }
+        }
+        
+    }
+}

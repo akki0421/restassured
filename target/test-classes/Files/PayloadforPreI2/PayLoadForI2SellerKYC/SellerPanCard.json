@@ -1,0 +1,9 @@
+{
+  "operationName": "markNotRequired",
+  "variables": {
+    "contextType": "lead",
+    "leadId": "143030",
+    "labelId": "223"
+  },
+  "query": "mutation markNotRequired($contextType: String, $leadId: Int, $labelId: Int) {\n  markNotRequired(contextType: $contextType, leadId: $leadId, labelId: $labelId) {\n    ok\n    message\n    __typename\n  }\n}\n"
+}

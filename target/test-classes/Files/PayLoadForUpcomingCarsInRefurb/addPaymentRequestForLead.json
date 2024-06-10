@@ -1,0 +1,10 @@
+{
+  "operationName": "addPaymentRequestForLead",
+  "variables": {
+    "amount": "90000",
+    "paymentBreakdownId": "2438",
+    "bankAccountNumber": "000405002777",
+    "ifsc": "ICIC0001033"
+  },
+  "query": "mutation addPaymentRequestForLead($amount: Float, $paymentBreakdownId: Int, $bankAccountNumber: String, $ifsc: String, $payment_mode: String) {\n  addPaymentRequestForLead(\n    amount: $amount\n    paymentBreakdownId: $paymentBreakdownId\n    bankAccountNumber: $bankAccountNumber\n    ifsc: $ifsc\n    paymentMode: $payment_mode\n  ) {\n    error\n    data\n    __typename\n  }\n}\n"
+}

@@ -1,0 +1,10 @@
+{
+  "operationName": "addComment",
+  "variables": {
+    "statusName": "lead-workflow-lead-workflow-applicable-for-procurement",
+    "taskId": "2912723",
+    "leadPk": "149187",
+    "commentText": "Lead Action Applicable for procurement : Test"
+  },
+  "query": "mutation addComment($commentText: String!, $taskId: Int!, $leadPk: Int!) {\n  addComment(leadPk: $leadPk, commentText: $commentText, userTaskId: $taskId) {\n    comment {\n      comment\n      extraInfo {\n        category {\n          name\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+}

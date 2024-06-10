@@ -1,0 +1,348 @@
+{
+  "template_tree_id": 4,
+  "report_data": [
+    {
+      "verdict": "Not Okay",
+      "checkpoint_id": 1734,
+      "fixes": [
+        {
+          "marked": false,
+          "labour_cost": "0",
+          "id": 2505,
+          "part_cost": "0"
+        }
+      ]
+    },
+    {
+      "verdict": "Not Okay",
+      "checkpoint_id": 6203,
+      "fixes": [
+        {
+          "marked": false,
+          "labour_cost": "0",
+          "id": 591,
+          "part_cost": "0"
+        }
+      ]
+    },
+    {
+      "verdict": "Not Okay",
+      "checkpoint_id": 1757,
+      "fixes": [
+        {
+          "marked": true,
+          "labour_cost": 0,
+          "id": 2508,
+          "part_cost": 5800
+        }
+      ]
+    },
+    {
+      "verdict": "Not Okay",
+      "checkpoint_id": 1756,
+      "fixes": [
+        {
+          "marked": false,
+          "labour_cost": "0",
+          "id": 591,
+          "part_cost": "0"
+        }
+      ]
+    },
+    {
+      "verdict": "Not Okay",
+      "checkpoint_id": 35,
+      "fixes": [
+        {
+          "marked": true,
+          "labour_cost": 200,
+          "id": 15,
+          "part_cost": 0
+        }
+      ]
+    },
+    {
+      "verdict": "Not Okay",
+      "checkpoint_id": 32,
+      "fixes": [
+        {
+          "marked": false,
+          "labour_cost": "0",
+          "id": 14,
+          "part_cost": "0"
+        }
+      ]
+    },
+    {
+      "verdict": "Not Okay",
+      "checkpoint_id": 118,
+      "fixes": [
+        {
+          "marked": true,
+          "labour_cost": 0,
+          "id": 3013,
+          "part_cost": 0
+        }
+      ]
+    },
+    {
+      "verdict": "Not Okay",
+      "checkpoint_id": 116,
+      "fixes": [
+        {
+          "marked": false,
+          "labour_cost": "0",
+          "id": 2530,
+          "part_cost": "0"
+        }
+      ]
+    },
+    {
+      "verdict": "Not Okay",
+      "checkpoint_id": 119,
+      "fixes": [
+        {
+          "marked": false,
+          "labour_cost": "0",
+          "id": 47,
+          "part_cost": "0"
+        }
+      ]
+    },
+    {
+      "verdict": "Not Okay",
+      "checkpoint_id": 3494,
+      "fixes": [
+        {
+          "marked": true,
+          "labour_cost": 1250,
+          "id": 578,
+          "part_cost": 0
+        }
+      ]
+    },
+    {
+      "verdict": "Not Okay",
+      "checkpoint_id": 315,
+      "fixes": [
+        {
+          "marked": true,
+          "labour_cost": 2580,
+          "id": 3016,
+          "part_cost": 0
+        }
+      ]
+    },
+    {
+      "verdict": "Not Okay",
+      "checkpoint_id": 7059,
+      "fixes": [
+        {
+          "marked": true,
+          "labour_cost": 0,
+          "id": 3638,
+          "part_cost": 0
+        }
+      ]
+    },
+    {
+      "verdict": "Not Okay",
+      "checkpoint_id": 283,
+      "fixes": [
+        {
+          "marked": true,
+          "labour_cost": 0,
+          "id": 2539,
+          "part_cost": 0
+        }
+      ]
+    },
+    {
+      "verdict": "Not Okay",
+      "checkpoint_id": 253,
+      "fixes": [
+        {
+          "marked": true,
+          "labour_cost": 0,
+          "id": 2540,
+          "part_cost": 0
+        }
+      ]
+    },
+    {
+      "verdict": "Not Okay",
+      "checkpoint_id": 330,
+      "fixes": [
+        {
+          "marked": true,
+          "labour_cost": 2500,
+          "id": 3026,
+          "part_cost": 0
+        }
+      ]
+    },
+    {
+      "verdict": "Not Okay",
+      "checkpoint_id": 1730,
+      "fixes": [
+        {
+          "marked": true,
+          "labour_cost": 1200,
+          "id": 576,
+          "part_cost": 5600
+        }
+      ]
+    },
+    {
+      "verdict": "Not Okay",
+      "checkpoint_id": 399,
+      "fixes": [
+        {
+          "marked": true,
+          "labour_cost": 100,
+          "id": 121,
+          "part_cost": 0
+        }
+      ]
+    },
+    {
+      "verdict": "Not Okay",
+      "checkpoint_id": 6024,
+      "fixes": [
+        {
+          "marked": false,
+          "labour_cost": "0",
+          "id": 1806,
+          "part_cost": "0"
+        }
+      ]
+    },
+    {
+      "verdict": "Okay",
+      "checkpoint_id": 406,
+      "value": 55,
+      "fixes": [
+        {
+          "marked": false,
+          "labour_cost": "0",
+          "id": 124,
+          "part_cost": "0"
+        }
+      ]
+    },
+    {
+      "verdict": "Not Okay",
+      "checkpoint_id": 4419,
+      "fixes": [
+        {
+          "marked": true,
+          "labour_cost": 0,
+          "id": 1811,
+          "part_cost": 0
+        }
+      ]
+    },
+    {
+      "verdict": "Not Okay",
+      "checkpoint_id": 4403,
+      "fixes": [
+        {
+          "marked": true,
+          "labour_cost": 0,
+          "id": 3038,
+          "part_cost": 0
+        }
+      ]
+    },
+    {
+      "verdict": "Okay",
+      "checkpoint_id": 778,
+      "value": 45,
+      "fixes": [
+        {
+          "marked": false,
+          "labour_cost": "0",
+          "id": 256,
+          "part_cost": "0"
+        }
+      ]
+    },
+    {
+      "verdict": "Not Okay",
+      "checkpoint_id": 6122,
+      "fixes": [
+        {
+          "marked": false,
+          "labour_cost": "0",
+          "id": 3241,
+          "part_cost": "0"
+        }
+      ]
+    },
+    {
+      "verdict": "Not Okay",
+      "checkpoint_id": 6129,
+      "fixes": [
+        {
+          "marked": true,
+          "labour_cost": 0,
+          "id": 3242,
+          "part_cost": 0
+        }
+      ]
+    },
+    {
+      "verdict": "Okay",
+      "checkpoint_id": 1098,
+      "value": 45,
+      "fixes": [
+        {
+          "marked": false,
+          "labour_cost": "0",
+          "id": 351,
+          "part_cost": "0"
+        }
+      ]
+    },
+    {
+      "verdict": "Okay",
+      "checkpoint_id": 1188,
+      "value": 50,
+      "fixes": [
+        {
+          "marked": false,
+          "labour_cost": "0",
+          "id": 384,
+          "part_cost": "0"
+        }
+      ]
+    },
+    {
+      "verdict": "Okay",
+      "checkpoint_id": 1598,
+      "value": 50,
+      "fixes": [
+        {
+          "marked": false,
+          "labour_cost": "0",
+          "id": 525,
+          "part_cost": "0"
+        }
+      ]
+    },
+    {
+      "verdict": "Okay",
+      "checkpoint_id": 2,
+      "fixes": [
+        {
+          "marked": false,
+          "labour_cost": "0",
+          "id": 719,
+          "part_cost": "0"
+        }
+      ]
+    }
+  ],
+  "template_tree_version_id": 37,
+  "api_version": "v2"
+}

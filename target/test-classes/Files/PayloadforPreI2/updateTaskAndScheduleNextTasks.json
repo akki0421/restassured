@@ -1,0 +1,8 @@
+{
+  "operationName": "updateTaskAndScheduleNextTasks",
+  "variables": {
+    "statusName": "lead-workflow-lead-workflow-schedule-inspection-done",
+    "taskId": "3087826"
+  },
+  "query": "mutation updateTaskAndScheduleNextTasks($taskId: Int!, $statusName: String!) {\n  updateTaskAndScheduleNextTasks(taskId: $taskId, statusName: $statusName) {\n    ok\n    message\n    __typename\n  }\n}\n"
+}

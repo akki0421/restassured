@@ -1,0 +1,12 @@
+{
+  "operationName": "updateSupplyToRefurbMovement",
+  "variables": {
+    "leadId": "150316",
+    "refurbAcceptedAt": "2022-05-20T16:02:51+05:30",
+    "refurbLocationId": "1",
+    "deliveryOdometerReading": "12345",
+    "carPhoto": null,
+    "deliveryOdometerPhoto": null
+  },
+  "query": "mutation updateSupplyToRefurbMovement($leadId: Int!, $refurbAcceptedAt: DateTime, $refurbLocationId: Int!, $carPhoto: Upload, $deliveryOdometerPhoto: Upload, $deliveryOdometerReading: Int!) {\n  updateSupplyToRefurbMovement(\n    leadId: $leadId\n    refurbAcceptedAt: $refurbAcceptedAt\n    refurbLocationId: $refurbLocationId\n    deliveryOdometerReading: $deliveryOdometerReading\n    deliveryOdometerPhoto: $deliveryOdometerPhoto\n    carPhoto: $carPhoto\n  ) {\n    ok\n    message\n    __typename\n  }\n}\n"
+}

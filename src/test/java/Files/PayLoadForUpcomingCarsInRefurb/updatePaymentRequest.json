@@ -1,0 +1,12 @@
+{
+  "operationName": "updatePaymentRequest",
+  "variables": {
+    "pk": "3721",
+    "remarks": "test",
+    "status": "approved",
+    "transactionDateTime": "2022-11-11T15:37:55+05:30",
+    "transactionNumber": "89423",
+    "paymentMode": "NEFT"
+  },
+  "query": "mutation updatePaymentRequest($pk: Int, $remarks: String, $status: String, $transactionDateTime: DateTime, $transactionNumber: String, $paymentMode: String, $contractType: String) {\n  updatePaymentRequest(\n    pk: $pk\n    remarks: $remarks\n    status: $status\n    transactionDateTime: $transactionDateTime\n    transactionNumber: $transactionNumber\n    paymentMode: $paymentMode\n    contractType: $contractType\n  ) {\n    ok\n    error\n    paymentRequest {\n      pk\n      status\n      __typename\n    }\n    combinedPaymentRequest {\n      pk\n      status\n      __typename\n    }\n    __typename\n  }\n}\n"
+}

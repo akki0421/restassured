@@ -1,0 +1,9 @@
+{
+  "operationName": "addProcurementDetails",
+  "variables": {
+    "leadPk": "150316",
+    "price": "819000",
+    "tradingPartnerId": "8"
+  },
+  "query": "mutation addProcurementDetails($leadPk: Int, $price: Int, $tradingPartnerId: Int) {\n  addProcurementDetails(\n    leadId: $leadPk\n    price: $price\n    tradingPartnerId: $tradingPartnerId\n  ) {\n    procurementDetails {\n      price\n      __typename\n    }\n    error\n    ok\n    __typename\n  }\n}\n"
+}

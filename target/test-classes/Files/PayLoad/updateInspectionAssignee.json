@@ -1,0 +1,10 @@
+{
+  "operationName": "updateInspectionAssignee",
+  "variables": {
+    "inspectionId": "83065",
+    "inspectorId": "1068565",
+    "inspectionType": "inspection",
+    "reason": "Inspection very far from inspector's home location"
+  },
+  "query": "mutation updateInspectionAssignee($inspectionId: Int!, $inspectionType: String!, $inspectorId: Int!, $reason: String) {\n  updateInspectionAssignee(\n    inspectionId: $inspectionId\n    inspectionType: $inspectionType\n    inspectorId: $inspectorId\n    reason: $reason\n  ) {\n    inspection {\n      id\n      assignedTo {\n        id\n        fullName\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+}

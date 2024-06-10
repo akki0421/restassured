@@ -1,0 +1,17 @@
+{
+  "contact_details": {
+    "contact_number": "9876543254",
+    "name": "test",
+    "address_line_1": "Gurugram",
+    "address": "Gurugram, Haryana, India",
+    "lat": 28.4594965,
+    "long": 77.0266383,
+    "city_name": "Gurugram"
+  },
+  "category": "assured",
+  "comment": "lknjhgu",
+  "city": "gurgaon-1",
+  "transfer_success": true,
+  "context_type": "sales",
+  "sub_context_type": "Car Details & Photos"
+}

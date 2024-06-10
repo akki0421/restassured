@@ -1,0 +1,15 @@
+{
+  "operationName": "addSupplyToRefurbMovement",
+  "variables": {
+    "leadPk": "150316",
+    "leadId": "150316",
+    "stockInDate": "2022-05-20T15:35:46+05:30",
+    "expectedRefurbLocationId": "1",
+    "expectedRefurbDate": "2022-05-20T15:35:53+05:30",
+    "tradingPartner": "[object Object]",
+    "stockInOdometerPhoto": null,
+    "stockInOdometerReading": "12344",
+    "stockInLocation": "Test Address"
+  },
+  "query": "mutation addSupplyToRefurbMovement($leadId: Int!, $stockInDate: DateTime, $expectedRefurbLocationId: Int, $expectedRefurbDate: DateTime, $commentId: Int, $stockInOdometerReading: Int, $stockInOdometerPhoto: Upload, $stockInLocation: String) {\n  addSupplyToRefurbMovement(\n    commentId: $commentId\n    leadId: $leadId\n    stockInDate: $stockInDate\n    expectedRefurbLocationId: $expectedRefurbLocationId\n    expectedRefurbDate: $expectedRefurbDate\n    stockInOdometerPhoto: $stockInOdometerPhoto\n    stockInOdometerReading: $stockInOdometerReading\n    stockInLocation: $stockInLocation\n  ) {\n    ok\n    message\n    __typename\n  }\n}\n"
+}

@@ -1,0 +1,14 @@
+{
+  "operationName": "getLeadInspections",
+  "variables": {
+    "websitePriceType": "website_sell_price",
+    "customerPriceType": "customer_expected_price",
+    "negotiationPriceType": "post_inspection_calling",
+    "maxProcurementPriceType": "maximum_procurement_price",
+    "postInspectionPriceType": "post_inspection_calling",
+    "preInspectionPriceType": "pre_inspection_calling",
+    "leadPk": "139043",
+    "leadId": "139043"
+  },
+  "query": "query getLeadInspections($leadPk: Int, $inspectionType: [String], $inspectorName: String, $inspectionStatus: [String]) {\n  leadInspections(\n    leadId: $leadPk\n    inspectionType: $inspectionType\n    inspectorName: $inspectorName\n    inspectionStatus: $inspectionStatus\n  ) {\n    id\n    lead {\n      pk\n      sourceGroup\n      procurementCategory\n      city {\n        pk\n        __typename\n      }\n      __typename\n    }\n    taskDetails {\n      finishTime\n      status {\n        name\n        __typename\n      }\n      __typename\n    }\n    inspection {\n      status\n      reachLocationStartTime\n      cancellationReason\n      verdict {\n        status\n        value\n        __typename\n      }\n      oem\n      loanClosure\n      instaPickup\n      category\n      id\n      pk\n      name\n      taskType\n      refurbishmentCost\n      assignedTo {\n        fullName\n        __typename\n      }\n      scheduledStartTime\n      startTime\n      scheduledEndTime\n      uploadReport\n      inspectionCompleted\n      finishTime\n      address\n      lat\n      locality {\n        displayName\n        __typename\n      }\n      lng\n      city {\n        pk\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+}

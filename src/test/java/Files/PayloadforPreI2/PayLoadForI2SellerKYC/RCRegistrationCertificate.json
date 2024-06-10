@@ -1,0 +1,16 @@
+{
+  "operationName": "addFile",
+  "variables": {
+    "contextType": "lead",
+    "files": [
+      {
+        "file": null,
+        "label": "rc-registration-certificate"
+      }
+    ],
+    "contextId": "143030",
+    "label": "rc-registration-certificate",
+    "leadPk": "143030"
+  },
+  "query": "mutation addFile($files: [FileInput], $contextType: String, $contextId: Int) {\n  addFile(\n    fileToUploadAndVerify: {files: $files, contextType: $contextType, contextId: $contextId}\n  ) {\n    ok\n    message\n    __typename\n  }\n}\n"
+}

@@ -1,0 +1,8 @@
+{
+  "operationName": "getAllTasksForLead",
+  "variables": {
+    "leadId": "138753",
+    "pending": true
+  },
+  "query": "query getAllTasksForLead($leadId: Int, $pending: Boolean, $taskTypes: [String], $users: [Int]) {\n  getAllTasksForLead(\n    leadId: $leadId\n    pending: $pending\n    taskTypes: $taskTypes\n    users: $users\n  ) {\n    leadtaskdetails {\n      leadOwner {\n        username\n        __typename\n      }\n      procurementCategory\n      __typename\n    }\n    pk\n    displayInfo\n    assignedTo {\n      pk\n      fullName\n      __typename\n    }\n    lead {\n      pk\n      __typename\n    }\n    createdTime\n    finishedBy {\n      pk\n      fullName\n      __typename\n    }\n    taskType {\n      id\n      name\n      description\n      __typename\n    }\n    scheduledTime\n    finishTime\n    status {\n      id\n      description\n      __typename\n    }\n    active\n    isCompleted\n    isInboundCall\n    __typename\n  }\n}\n"
+}

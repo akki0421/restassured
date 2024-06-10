@@ -1,0 +1,8 @@
+{
+  "operationName": "updateProfileData",
+  "variables": {
+    "leadId": "572381",
+    "data": "{\"profile__hypothecation\":\"False\"}"
+  },
+  "query": "mutation updateProfileData($data: JSONString, $leadId: Int) {\n  updateProfileData(data: $data, leadId: $leadId) {\n    ok\n    message\n    __typename\n  }\n}\n"
+}
